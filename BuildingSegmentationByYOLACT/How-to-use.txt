@@ -1,0 +1,16 @@
+Because the BuildingSegmentationByYOLACT files are too large, it is not allowed to upload them to GitHub
+Download BuildingSegmentationByYOLACT file at：
+https://pan.baidu.com/s/1fXqELGk1BWNIj1UZUrSG0g , password: p813
+
+How to use:
+
+.../build_main/build_main.exe -i '../XXX.tif' -m '../yolact_base_2632_163200.pth' -o '../YYY/'
+
+'../XXX.tif' --- is the input image to be segmented
+
+'../yolact_base_2632_163200.pth'  --- is the pre-trained model based on Jilin-1 satellite images
+
+'../YYY/' --- is the output folder name
+
+Note: all path names must be in English
+
