@@ -24,6 +24,7 @@ Chang Guang Satellite Technology Co., Ltd., No. 1299 Mingxi Rd., Changchun, Jili
 Contact: yihui_li_whu@qq.com
 
 ########################################################################
+
 Steps for using this code:
 1. Upsample the MS image to the same size with the PAN image (can use "Resize" code by us, or ArcGIS).
 2. Run Stretch16to8, stretch the upsampled MS image from 16-bit to 8-bit.
