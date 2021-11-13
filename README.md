@@ -22,3 +22,25 @@ Note:
 Chang Guang Satellite Technology Co., Ltd., No. 1299 Mingxi Rd., Changchun, Jilin, China.
 
 Contact: yihui_li_whu@qq.com
+
+########################################################################
+Steps for using this code:
+1. Upsample the MS image to the same size with the PAN image (can use "Resize" code by us, or ArcGIS).
+2. Run Stretch16to8, stretch the upsampled MS image from 16-bit to 8-bit.
+3. Run BuildingSegmentationByYOLACT (input the 8-bit upsampled MS image), get a segemted buildings image.
+4. Run ComputeBuildingFactor, get building factor image.
+5. Run GetSobel (input 16-bit upsampled MS image).
+6. Run GradientSimulation (input original PAN image, 16-bit upsampled MS image, sobel result image).
+7. Resize the building factor image to the same size with original MS image.
+8. Run Fusion to generate the fused image.
+
+Code reuqires:
+OpenCV 2.4
+GDAL 2.2
+PCL 1.8
+OpenMP
+
+Development environments:
+MicroSoft Visual Studio 2015 C++
+Windows 10 x64
+16G RAM
